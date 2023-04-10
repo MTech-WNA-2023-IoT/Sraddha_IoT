@@ -4,6 +4,6 @@ import paho.mqtt.client as mqtt
 payload="Hello"
 topic="IOT/test"
 client = mqtt.Client()
-client.connect('http://34.100.205.14/',1883,60)
+client.connect('34.100.205.14',1883,60)
 (rc,mid)=client.publish(topic,payload);
 client.disconnect();
