@@ -1,13 +1,13 @@
 #Import pymysql module library
 import pymysql
 #Create a connection to MySQL Database 
-conn =pymysql.connect(database="databasename",user="user",password="password",host="localhost")
+conn =pymysql.connect(database="Sraddha_1",user="sraddha",password="sraddha@99",host="localhost")
 #Create a MySQL Cursor to that executes the SQLs
 cur=conn.cursor()
-#Create a dictonary containing the fields, name, age and place
-data={'name':'hello','age':10,'place':'kollam'}
+#Create a dictonary containing the fields, topic,data
+data={'topic:ph level','Data: 7.41'}
 #Execute the SQL to write data to the database
-cur.execute("INSERT INTO <tablename>(name, age, place)VALUES(%(name)s,%(age)s,%(place)s);",data)
+cur.execute("INSERT INTO <MQTT_1>(Topic,Data)VALUES(%(topic)s,%(data)s;",data)
 #Close the cursor
 cur.close()
 #Commit the data to the database
