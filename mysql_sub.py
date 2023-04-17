@@ -5,7 +5,7 @@ global broker;
 global port;
 
 
-broker = "34.100.205.14";
+broker = "35.200.232.144";
 port = 1883;
 
 client_uniq = "pubclient_123"
