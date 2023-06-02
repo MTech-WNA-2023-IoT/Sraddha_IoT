@@ -3,7 +3,7 @@ import mysql.connector
 from urllib.request import urlopen
 
 # Create a user account and obtain an API key from https://www.weatherapi.com
-url = "https://api.weatherapi.com/v1/current.json?key=04f0dee8ff7b40f793840804232905
+url = "https://api.weatherapi.com/v1/current.json?key=04f0dee8ff7b40f793840804232905&q=kollam&aqi=no"
 
 api_page = urlopen(url)
 api = api_page.read()
