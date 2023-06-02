@@ -3,7 +3,7 @@ import mysql.connector
 from urllib.request import urlopen
 
 # Create a user account and obtain an API key from https://www.weatherapi.com
-url = "https://api.weatherapi.com/v1/current.json?key=746c5ad6052440c780040657232905&q=kollam&aqi=no"
+url = "https://api.weatherapi.com/v1/current.json?key=04f0dee8ff7b40f793840804232905
 
 api_page = urlopen(url)
 api = api_page.read()
@@ -15,9 +15,9 @@ json_api = json.loads(api)
 # Connect to MySQL database
 db = mysql.connector.connect(
     host='0.0.0.0',
-    user='pi',
-    password='raspberry',
-    database='weather1'
+    user='sraddha',
+    password='Sraddha@99',
+    database='WeatherAPI'
 )
 # Execute the create table query
 db_cursor = db.cursor()
